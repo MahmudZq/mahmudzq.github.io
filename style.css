@@ -1,0 +1,502 @@
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}  
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+	
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* hm contain */
+.flex{display:flex}
+
+.flex-wrap{flex-wrap:wrap}
+
+.justify-between{justify-content:space-between}
+	
+.pt-0{padding-top:0rem}
+	
+.pt-12{padding-top:3rem}
+
+.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem}
+
+.w-full{width:100%}
+
+.md\:w-1{width:.25rem}
+
+.md\:w-2{width:.5rem}
+
+.md\:w-3{width:.75rem}
+
+.md\:w-4{width:1rem}
+
+.md\:w-5{width:1.25rem}
+
+.md\:w-6{width:1.5rem}
+
+.md\:w-8{width:2rem}
+
+.md\:w-10{width:2.5rem}
+
+.md\:w-12{width:3rem}
+
+.md\:w-16{width:4rem}
+
+.md\:w-20{width:5rem}
+
+.md\:w-24{width:6rem}
+
+.md\:w-32{width:8rem}
+
+.md\:w-40{width:10rem}
+
+.md\:w-48{width:12rem}
+
+.md\:w-56{width:14rem}
+
+.md\:w-64{width:16rem}
+
+.md\:w-auto{width:auto}
+
+.md\:w-px{width:1px}
+
+.md\:w-1\/2{width:50%}
+
+.md\:w-1\/3{width:33.333333%}
+
+.md\:w-2\/3{width:66.666667%}
+
+.md\:w-1\/4{width:25%}
+
+.md\:w-2\/4{width:50%}
+
+.md\:w-3\/4{width:75%}
+
+.md\:w-1\/5{width:20%}
+
+.md\:w-2\/5{width:40%}
+
+.md\:w-3\/5{width:60%}
+
+.md\:w-full{width:100%}
+
+.p-0{padding:0}
+
+.p-1{padding:.25rem}
+
+.p-2{padding:.5rem}
+
+.p-3{padding:.75rem}
+
+.p-4{padding:1rem}
+
+.p-5{padding:1.25rem}
+
+.p-6{padding:1.5rem}
+
+.flex-col{flex-direction:column}
+
+.flex-grow-0{flex-grow:0}
+
+.flex-grow{flex-grow:1}
+
+.flex-shrink-0{flex-shrink:0}
+
+.flex-shrink{flex-shrink:1}
+
+.flex-1{flex:1 1 0%}
+
+.flex-row{flex-direction:row}
+
+.bg-white{background-color:#fff}
+
+.rounded-t{border-top-left-radius:.25rem;border-top-right-radius:.25rem}
+
+.rounded-b-none{border-bottom-right-radius:0;border-bottom-left-radius:0}
+
+.overflow-hidden{overflow:hidden}
+
+.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}
+
+.no-underline{text-decoration:none}
+
+.hover\:no-underline:hover{text-decoration:none}
+
+.bg-gray-200{background-color:#edf2f7}
+	
+.h-full{height:100%}
+
+.w-full{width:100%}
+
+.pb-6{padding-bottom:1.5rem}
+	
+.font-bold{font-weight:700}
+
+.text-xl{font-size:1.25rem}
+
+.text-gray-900{color:#1a202c}
+
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+
+.text-gray-800{color:#2d3748}
+
+.font-serif{font-family:Georgia,Cambria,"Times New Roman",Times,serif}
+
+.text-base{font-size:1rem}
+
+.mb-5{margin-bottom:1.25rem}
+	
+/* hm contain */
+	
+.active, .dot:hover {
+  background-color: #717171;
+}
+ * {
+  box-sizing: border-box;
+}
+
+html{
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.wt{
+  padding: 0.25rem;
+  font-size:1.2rem;
+  margin-bottom: 0.2rem;
+  background-color: #bd0505;
+  color: #ffffff;
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.wt:hover {
+  background-color: #ffffff;
+  color: #bd0505;
+  font-size:1.2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+}
+ 
+.st{
+  background-color: #ffffff;
+  color: #bd0505;
+  font-size: 1.2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+}
+.dt{
+  background-color: #ffffff;
+  color: #bd0505;
+  font-size:1.0rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+  text-align:center;
+	width:90%;}
+.card{
+background-color:#aaabbb;
+color:black;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 100%;
+text-align:center;
+}
+.card2{
+background-color:black;
+color:white;
+max-width: 100%;
+font-size:1.0rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.card img{
+border-radius:50%;
+width:150px;
+padding:0.06rem;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+.card3 img{
+border-radius:0%;
+width:440px;
+padding:0.06rempx;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+.card4{
+max-width: 85%;
+  padding: 0.5rem;
+  font-size:1.0rem;
+  margin-bottom: 0.05rem;
+  background-color: #eeeeee;
+  color: #9b093a;
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.5);
+}
+.card6{
+max-width: 80%;
+  padding: 0.5rem;
+  font-size:1.0rem;
+  margin-bottom: 0.05rem;
+  background-color: #eeeeee;
+  color: #bd0505;
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.5);
+}
+.card5{
+  max-width: 80%;
+  padding: 0.5rem;
+  font-size:1.0rem;
+  margin-bottom: 0.05rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-shadow: 0.03rem 0.02rem 0.03rem #666666;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.5);
+}
+.card7{
+max-width: 80%;
+  padding: 0.5rem;
+  font-size:1.0rem;
+  margin-bottom: 0.05rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-shadow: 0.04rem 0.02rem 0.02rem #666666;
+}
+.gallery {
+  margin: 2%;
+  float: left;
+  width: 46%;
+  text-align: center;
+
+}
+
+
+.gallery img{
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
+}
+.gallery2 {
+  margin: 2%;
+  float: center;
+  width: 50%;
+  text-align: center;
+
+}
+
+
+.gallery2 img{
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+    bottom: 10%;
+    position: fixed;
+}
+.button2 {
+  display: inline-block;
+  border-radius: 2px;
+ background-color: #b00505;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 1%;
+  width: 94%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 13px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  .button2s {
+  display: inline-block;
+  border-radius: 2px;
+ background-color: #FFFFFF;
+   border: 1px solid #9b093a;
+  color: #b00505;
+  text-align: center;
+  font-size: 10px;
+  padding: 1%;
+  width: 94%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button2s span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2s span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button2s:hover span {
+  padding-right: 13px;
+}
+
+.button2s:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.galleryv {
+  margin: 2%;
+  float: left;
+  width: 20%;
+  text-align: center;
+
+}
+
+  .cardf {
+  padding: 10px;
+  font-size: 30px;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.cardf:hover {
+    opacity: 0.7;
+}
+
+.cardf {
+  background: #3B5998;
+  color: white;
+}
+.tfs {
+	font-size: 1%;
+	color:#ffffff;	
+	text-align: center;
+		}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+Step 3) Add JavaScript:
+Example
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
